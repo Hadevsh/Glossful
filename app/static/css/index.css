@@ -3,5 +3,13 @@ h1 {
 }
 
 h1 span {
-    font-style: italic;
+    font-family: "Birthstone", cursive;
+    /* font-style: italic; */
+    color: var(--color-white);
+    font-size: 7rem;
+    font-weight: 100;
+}
+
+p {
+    color: var(--color-text-muted);
 }
