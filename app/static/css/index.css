@@ -7,6 +7,10 @@ h1 span {
     color: var(--color-white);
     font-size: 7rem;
     font-weight: 100;
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.6rem;
 }
 
 p {
