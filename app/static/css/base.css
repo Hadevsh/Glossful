@@ -58,11 +58,18 @@ nav {
     height: 60px;
     background-color: var(--color-surface);
     display: flex;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     z-index: 10;
     border-bottom: 1px solid var(--color-border);
-    gap: 20px
+}
+
+.glossful {
+    position: absolute;
+    font-family: "Birthstone", cursive;
+    font-size: 4rem;
+    left: 1rem;
 }
 
 nav a {

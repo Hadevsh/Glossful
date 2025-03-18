@@ -4,7 +4,6 @@ h1 {
 
 h1 span {
     font-family: "Birthstone", cursive;
-    /* font-style: italic; */
     color: var(--color-white);
     font-size: 7rem;
     font-weight: 100;

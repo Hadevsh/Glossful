@@ -11,11 +11,14 @@
 <body>
     <!-- Nav bar stays the same on every sub-page -->
     <nav>
-        <a href="/">Home</a>
-        <a href="/flashcards">Flashcards</a>
-        <a href="/topics">Topics</a>
-        <a href="/grammar">Grammar</a>
-        <a href="/reading">Reading</a>
+        <span class="glossful">Glossful</span>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/flashcards">Flashcards</a>
+            <a href="/topics">Topics</a>
+            <a href="/grammar">Grammar</a>
+            <a href="/reading">Reading</a>
+        </div>
     </nav>
 
     {% block content %}{% endblock %} <!-- Each sub-page has it's own block -->
