@@ -32,6 +32,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* Unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
   
 body {
@@ -47,12 +53,6 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-
-    /* Unselectable */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
 }
   
 /* Navigation Bar */
