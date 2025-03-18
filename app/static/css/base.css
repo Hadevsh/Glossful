@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    /* Backgrounds */
+    --color-bg: #121212;
+    --color-surface: #1e1e1e;
+    --color-panel: #2a2a2a;
+    --color-hover: #333333;
+  
+    /* Text Colors */
+    --color-white: #ffffff;
+    --color-text-primary: #f0f0f0;
+    --color-text-secondary: #c0c0c0;
+    --color-text-muted: #888888;
+  
+    /* Accent Colors */
+    --color-accent-blue: #4ea8de;
+    --color-accent-green: #70e000;
+    --color-accent-yellow: #ffd60a;
+    --color-accent-pink: #ff6f91;
+  
+    /* Borders & Shadows */
+    --color-border: #3c3c3c;
+    --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.3);
+  
+    /* Status */
+    --color-success: #4caf50;
+    --color-warning: #fbc02d;
+    --color-error: #f44336;
+}
+
 /* Base styling applies for all pages */
 * {
     margin: 0;
@@ -9,8 +38,8 @@
   
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #f0f0f0;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
     line-height: 1.6;
     text-align: center;
     padding-top: 60px; /* for fixed nav */
@@ -29,26 +58,26 @@ nav {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #1e1e1e;
+    background-color: var(--color-surface);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--color-border);
 }
 
 nav a {
     margin: 0 1rem;
     padding: 0.5rem 1rem;
-    color: #f0f0f0;
+    color: var(--color-text-primary);
     font-weight: 500;
     border-radius: 8px;
-    transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, color 0.3s;
 }
   
 nav a:hover {
-    background-color: #2a2a2a;
-    color: #ffffff;
+    background-color: var(--color-panel);
+    color: var(--color-white);
 }
   
 /* Page Content */
