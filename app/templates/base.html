@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossful</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"> <!-- Base styling -->
+    {% block head %}{% endblock %} <!-- Each sub-page has it's own stylesheet -->
+</head>
+<body>
+    <!-- Nav bar stays the same on every sub-page -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/flashcards">Flashcards</a>
+        <a href="/topics">Topics</a>
+        <a href="/grammar">Grammar</a>
+        <a href="/reading">Reading</a>
+    </nav>
+
+    {% block content %}{% endblock %} <!-- Each sub-page has it's own block -->
+</body>
+</html>
