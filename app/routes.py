@@ -8,11 +8,11 @@ main = Blueprint('main', __name__)
 def home():
     return render_template("index.html")
 
-"""
 @main.route("/flashcards")
 def flashcards():
     return render_template("flashcards.html")
 
+"""
 @main.route("/topics")
 def topics():
     return render_template("topics.html")
