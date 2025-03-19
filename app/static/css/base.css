@@ -55,10 +55,10 @@ a {
     color: inherit;
     display: inline-block;
     position: relative;
-    transition: background 0.2s ease-in-out, color 0.3s;
+    transition: background 0.2s ease-in-out, color 0.3s, font-weight 0.1s;
 }
 
-/* Navigation bar links hover underline animation */
+/* All links hover underline animation */
 a::after {
     content: '';
     position: absolute;
@@ -69,12 +69,17 @@ a::after {
     left: 0;
     background-color: var(--color-accent);
     transition: transform 0.25s ease-out;
-    transform-origin: bottom right;
+    transform-origin: bottom right
 }
   
 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: 700;
 }
   
 /* Navigation Bar */
