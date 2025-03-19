@@ -171,3 +171,5 @@ cython_debug/
 static/audio/
 static/images/psd
 data/
+
+.env
