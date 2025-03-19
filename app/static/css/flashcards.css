@@ -29,6 +29,8 @@ h1 span {
     left: 0;
     margin: 2rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Flashcard styling */
