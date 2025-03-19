@@ -1,0 +1,14 @@
+h1 {
+    font-size: 4rem;
+}
+
+h1 span {
+    font-family: "Birthstone", cursive;
+    color: var(--color-white);
+    font-size: 7rem;
+    font-weight: 100;
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.6rem;
+}
