@@ -81,6 +81,29 @@ a:hover {
     cursor: pointer;
 }
   
+/* Select menu's styling */
+select {
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    width: 10rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    transition: border 0.3s;
+}
+
+select:focus {
+    border: 1px solid var(--color-text-muted);
+}
+
+select option {
+    color: var(--color-surface);
+}
+
 /* Navigation Bar */
 nav {
     position: fixed;
