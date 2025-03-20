@@ -59,5 +59,10 @@ h1 span {
 }
 
 .card .sentence {
+    font-weight: 200;
     font-style: italic;
+}
+
+.card .sentence b {
+    font-weight: 500;
 }
