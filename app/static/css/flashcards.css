@@ -47,7 +47,9 @@ h1 span {
 }
 
 .card .word {
-    font-size: 2rem;
+    font-family: "Tinos", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
 }
 
 .card .pronunciation, .card .type {
