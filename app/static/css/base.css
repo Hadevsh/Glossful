@@ -22,7 +22,7 @@
   
     /* Borders & Shadows */
     --color-border: #3c3c3c;
-    --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.3);
+    --shadow-soft: rgba(0, 0, 0, 0.3);
   
     /* Status */
     --color-success: #4caf50;
@@ -161,6 +161,7 @@ main {
     padding: 2.5rem;
     border-radius: 0.5rem;
     max-width: 40rem;
+    box-shadow: 0 0 2rem var(--shadow-soft);
 }
 
 .card .word {
