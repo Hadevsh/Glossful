@@ -35,35 +35,3 @@ h1 span {
 .categories a:hover {
     font-weight: 700;
 }
-
-/* Flashcard styling */
-.card {
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    padding: 2.5rem;
-    border-radius: 0.5rem;
-    max-width: 40rem;
-}
-
-.card .word {
-    font-family: "Tinos", serif;
-    font-weight: 500;
-    font-size: 2.5rem;
-}
-
-.card .pronunciation, .card .type {
-    color: var(--color-text-secondary);
-}
-
-.card .definition {
-    margin: 1rem 0;
-}
-
-.card .sentence {
-    font-weight: 200;
-    font-style: italic;
-}
-
-.card .sentence b {
-    font-weight: 500;
-}

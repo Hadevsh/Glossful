@@ -13,6 +13,12 @@ h1 span {
     text-underline-offset: 0.6rem;
 }
 
-p {
+.info {
     color: var(--color-text-muted);
+}
+
+.container {
+    justify-items: center;
+    padding: 1rem;
+    margin: 2rem;
 }

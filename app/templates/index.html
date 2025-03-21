@@ -5,5 +5,20 @@
 
 {% block content %}
 <h1>Welcome to <span>Glossful</span></h1>
-<p>Select a mode to start learning vocabulary.</p>
+<p class="info">Select a mode to start learning vocabulary.</p>
+<div class="container">
+    <div class="card">
+        <!-- Generated dynamically -->
+        <!-- Placeholders: -->
+        <p class="word">Programming</p>
+        <p class="type">noun</p>
+        <p class="pronunciation">/ˈpɹəʊɡɹəmɪŋ/</p>
+        <!-- There can be multiple definitions -->
+        <p class="definition">
+            <!-- Multiple definitions genereated dynamically -->
+            (broadcasting) The designing, scheduling or planning of a radio or television program/programme.
+        </p>
+        <p class="sentence">The network changed its <b>programming</b> to mess with DVRs again.</p>
+    </div>
+</div>
 {% endblock %}
