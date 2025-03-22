@@ -1,6 +1,8 @@
-from flask import Blueprint, render_template, jsonify
-import json
+from flask import Blueprint, render_template, jsonify, request
 import os
+import json
+
+from app.utils import get_wiktionary_data
 
 main = Blueprint('main', __name__)
 
@@ -11,6 +13,12 @@ def home():
 @main.route("/flashcards")
 def flashcards():
     return render_template("flashcards.html")
+
+# New API endpoint to fetch Wiktionary data
+@main.route("/api/word/<word>")
+def api_word(word):
+    result = get_wiktionary_data(word)
+    return jsonify(result)
 
 """
 @main.route("/topics")
@@ -24,7 +32,6 @@ def grammar():
 @main.route("/reading")
 def reading():
     return render_template("reading.html")
-
 
 @main.route("/api/vocab/<lang>/<level>")
 def vocab_api(lang, level):
