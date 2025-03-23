@@ -154,6 +154,27 @@ main {
     margin: 0 auto;
 }
 
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-surface);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 2rem;
+    font-family: "Birthstone", cursive;
+    font-weight: 600;
+}
+
+footer p {
+    font-style: italic;
+}
+
 /* Flashcard styling */
 .card {
     background-color: var(--color-surface);
