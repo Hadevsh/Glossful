@@ -52,3 +52,25 @@ def get_wiktionary_data(word, language='English'):
                     return result
 
     return {"error": f"No {language} section found for '{word}'"}
+
+def get_random_word(language='en'):
+    url = f"https://{language}.wiktionary.org/w/api.php"
+    params = {
+        "action": "query",
+        "format": "json",
+        "list": "random",
+        "rnnamespace": 0,  # Namespace 0 contains main content (words)
+        "rnlimit": 1
+    }
+    response = requests.get(url, params=params)
+    
+    if response.status_code != 200:
+        return {"error": f"Failed to fetch a random word from {language} Wiktionary"}
+    
+    data = response.json()
+    random_entries = data.get("query", {}).get("random", [])
+    
+    if random_entries:
+        return random_entries[0].get("title", "No title found")
+    else:
+        return {"error": "No random word found in the response"}
