@@ -57,9 +57,15 @@ hr {
     background: linear-gradient(to right, transparent, var(--color-text-muted), transparent);
     height: 0.2rem;
     border: 0;
-    border-radius: 2rem;
     width: 90vw;
     margin: 0 auto;
+}
+
+/* Vertical line styling */
+.vl {
+    background: linear-gradient(to bottom, transparent, var(--color-text-muted), transparent);
+    width: 0.2rem;
+    height: inherit;
 }
 
 /* Reset links styling */
@@ -156,6 +162,9 @@ main {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -163,12 +172,18 @@ footer {
     background-color: var(--color-surface);
     padding: 1rem;
     text-align: center;
+    justify-content: center;
+}
+
+footer .content {
+    text-align: right;
 }
 
 footer h1 {
     font-size: 2rem;
     font-family: "Birthstone", cursive;
     font-weight: 600;
+    letter-spacing: 0.2rem;
 }
 
 footer p {
