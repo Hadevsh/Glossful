@@ -175,8 +175,16 @@ footer {
     justify-content: center;
 }
 
-footer .content {
+footer .content-right {
+    display: flex;
+    flex-direction: column;
     text-align: right;
+}
+
+footer .content-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 footer h1 {
