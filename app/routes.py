@@ -6,6 +6,7 @@ from app.utils import get_wiktionary_data
 
 main = Blueprint('main', __name__)
 
+# All sub-page routes
 @main.route("/")
 def home():
     return render_template("index.html")
@@ -14,6 +15,10 @@ def home():
 def flashcards():
     return render_template("flashcards.html")
 
+@main.route("/grammar")
+def grammar():
+    return render_template("grammar.html")
+
 # New API endpoint to fetch Wiktionary data
 @main.route("/api/word/<word>")
 def api_word(word):
@@ -21,13 +26,12 @@ def api_word(word):
     return jsonify(result)
 
 """
+Routes TODO:
+--------------------------------------------------
+
 @main.route("/topics")
 def topics():
     return render_template("topics.html")
-
-@main.route("/grammar")
-def grammar():
-    return render_template("grammar.html")
 
 @main.route("/reading")
 def reading():
