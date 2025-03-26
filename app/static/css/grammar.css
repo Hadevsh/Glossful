@@ -35,3 +35,9 @@ h1 span {
 .categories a:hover {
     font-weight: 700;
 }
+
+.content {
+    width: 100%;
+    padding: 0 10rem;
+    text-align: left;
+}
