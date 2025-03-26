@@ -1,5 +1,6 @@
 import requests
 import wikitextparser as wtp
+import datetime, calendar
 
 def get_wiktionary_data(word, language='English'):
     url = f"https://en.wiktionary.org/w/index.php?title={word}&action=raw"
@@ -74,3 +75,15 @@ def get_random_word(language='en'):
         return random_entries[0].get("title", "No title found")
     else:
         return {"error": "No random word found in the response"}
+    
+def get_day_word():
+    # Returns a dictionary with an English word and a foreign language word of the day
+    date = datetime.datetime.now()
+    year = date.year
+    month = calendar.month_name[date.month]
+    day = date.day
+
+    url = f"https://en.wiktionary.org/wiki/Wiktionary:Word_of_the_day/{year}/{month}_{day}?&action=raw"
+    print(url)
+
+get_day_word()
